@@ -11,6 +11,13 @@ The application allows users to input customer details and instantly predict whe
 
 ---
 
+## 🚀 Live Demo
+
+Try the deployed application here:  
+**https://customer-churn-prediction-9zoelfxls53vuj8e4ym3bq.streamlit.app/**
+
+---
+
 # Live Application Features
 
 ### 1. Customer Churn Prediction
@@ -181,18 +188,20 @@ Output:
 ```
 Customer-Churn-Prediction
 
-├── app.py / main.py
-├── model.pkl
-├── dataset.csv
-├── requirements.txt
-├── README.md
+├── 1_Home.py              # Main entry point - Churn prediction form
+├── model.pkl             # Trained Logistic Regression model
+├── pyproject.toml        # Project dependencies
+├── README.md             # This file
 │
-├── pages
-│   ├── 1_Home.py
-│   ├── 2_Model_Metrics.py
-│   └── 3_Pipeline.py
+├── data
+│   └── Telco_Customer_Churn_lyst1769326950438.csv
 │
-└── assets
+├── notebooks
+│   └── customer_churn_prediction_prod.ipynb
+│
+└── pages
+    ├── 2_Model_Matrix.py # Model Performance Metrics page
+    └── 3_Pipeline.py     # ML Pipeline Explanation page
 ```
 
 ---
@@ -258,23 +267,7 @@ source .venv/bin/activate
 Start the Streamlit server:
 
 ```bash
-uv run streamlit run main.py
-```
-
-The app will open in your browser:
-
-```
-http://localhost:8501
-```
-
----
-
-# Running the Application
-
-Start the Streamlit server
-
-```
-streamlit run main.py
+uv run streamlit run 1_Home.py
 ```
 
 The app will open in your browser:
