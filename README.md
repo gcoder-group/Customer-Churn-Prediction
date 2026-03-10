@@ -14,7 +14,7 @@ The application allows users to input customer details and instantly predict whe
 ## 🚀 Live Demo
 
 Try the deployed application here:  
-**https://customer-churn-prediction-9zoelfxls53vuj8e4ym3bq.streamlit.app/**
+<a href="https://customer-churn-prediction-9zoelfxls53vuj8e4ym3bq.streamlit.app/" target="_blank">**https://customer-churn-prediction-9zoelfxls53vuj8e4ym3bq.streamlit.app/**</a>
 
 ---
 
